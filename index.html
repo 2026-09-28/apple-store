@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac 쇼핑하기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Malgun Gothic", "Segoe UI", sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            min-width: 500px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 2rem;
+            margin: 5rem;
+
+            li {
+                width: 50vw;
+                min-width: 360px;
+                max-width: 450px;
+                border-radius: 2rem;
+                box-shadow: 2px 2px 20px rgb(184, 184, 184);
+                padding: 2rem;
+                flex: 1;
+
+                scroll-snap-align: center;
+
+                &:hover {
+                    transform: scale(1.02) translateY(-4px);
+                    transition: all 0.25s;
+                }
+
+                h3 {
+                    font-size: 1.75rem;
+                }
+
+                div.image-container {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                div.price-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        background-color: rgb(72, 72, 255);
+                        padding: 0.5rem 1rem;
+                        border-radius: 2rem;
+                        font-size: 12px;
+
+                        &:hover {
+                            background-color: blue;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .floating-menu {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgb(0, 0, 177);
+            padding: 0.5rem 1rem;
+            border-radius: 1.5rem;
+            transition: all 0.25s;
+
+            &:hover {
+                background-color: blue;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <ul>
+                <li>
+                    <h3>Macbook Neo</h3>
+                    <div class="image-container"><img src="./images/macbook-neo.webp" alt="Macbook Neo"></div>
+                    <div class="price-container">
+                        <span>1,190,000원</span>
+                        <a href="./detail.html">구입하기</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>Macbook Air</h3>
+                    <div class="image-container"><img src="./images/macbook-air.webp" alt="Macbook Air"></div>
+                    <div class="price-container">
+                        <span>2,190,000원</span>
+                        <a href="#">구입하기</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>Macbook Pro</h3>
+                    <div class="image-container"><img src="./images/macbook-pro.webp" alt="Macbook Pro"></div>
+                    <div class="price-container">
+                        <span>3,290,000원</span>
+                        <a href="#">구입하기</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>iMac</h3>
+                    <div class="image-container"><img src="./images/imac.webp" alt="iMac"></div>
+                    <div class="price-container">
+                        <span>2,490,000원</span>
+                        <a href="#">구입하기</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>Mac Mini</h3>
+                    <div class="image-container"><img src="./images/mac-mini.webp" alt="Mac Mini"></div>
+                    <div class="price-container">
+                        <span>1,499,000원</span>
+                        <a href="#">구입하기</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>Mac Studio</h3>
+                    <div class="image-container"><img src="./images/mac-studio.webp" alt="Mac Studio"></div>
+                    <div class="price-container">
+                        <span>4,290,000원</span>
+                        <a href="#">구입하기</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>Studio Display</h3>
+                    <div class="image-container"><img src="./images/studio-display.webp" alt="Studio Display"></div>
+                    <div class="price-container">
+                        <span>2,499,000원</span>
+                        <a href="#">구입하기</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>Studio Display XDR</h3>
+                    <div class="image-container"><img src="./images/studio-display-xdr.webp" alt="Studio Display XDR">
+                    </div>
+                    <div class="price-container">
+                        <span>5,199,000원</span>
+                        <a href="#">구입하기</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="floating-menu">
+        <a href="./about.html">설명</a>
+    </div>
+</body>
+
+</html>
